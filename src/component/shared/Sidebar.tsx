@@ -3,8 +3,7 @@ import { navLinks } from "@/constant";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import logo from "../../../public/logo.png";
-import { SignedIn, SignedOut, SignIn, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
@@ -73,7 +72,7 @@ const Sidebar = () => {
               );
             })}
           <li className="flex-center cursor-pointer gap-2 p-4">
-                <UserButton afterSignOutUrl='/' showName />
+                <UserButton showName />
               </li>
           </ul>
           {/* user profile button */}
